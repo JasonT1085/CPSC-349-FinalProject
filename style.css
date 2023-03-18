@@ -1,19 +1,38 @@
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    z-index: 1000;
-    animation-name: dropdown-animation;
-    animation-duration: 0.3s;
-    animation-fill-mode: both;
-    }
-    
-@keyframes dropdown-animation {
-    from {
-    opacity: 0;
-    transform: translateY(-10px);
-    }
-    to {
-    opacity: 1;
-    transform: translateY(0);
-    }
+/* Set the background color of the body */
+body {
+	background-color: #f2f2f2;
+}
+
+/* Style the header */
+.header {
+	background-color: #333;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Style the search bar */
+#search-bar {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	font-size: 16px;
+}
+
+/* Style the container */
+.container {
+	display: flex;
+	justify-content: center;
+	margin: 50px;
+}
+
+/* Style the champion grid */
+.champion-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
 }
