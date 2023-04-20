@@ -2,25 +2,24 @@ fetch('https://ddragon.leagueoflegends.com/cdn/13.8.1/data/en_US/champion.json')
 .then(response => response.json())
 .then(data => {
     let championGrid = document.querySelector('.champion-grid');
-    for (const champion in data.data) {
-        const championImg = data.data[champion].image.full;
-        const championName = data.data[champion].name;
-        const imageURL = `https://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/${championImg}`;
 
-        let championTile = document.createElement('div');
+    const champions = Object.keys(data.data).map(champion => (
+        {
+        name: data.data[champion].name,
+        icon: `https://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/${data.data[champion].image.full}`
+        }
+    ));
+
+    champions.sort((a, b) => a.name.localeCompare(b.name));
+
+    champions.forEach(champion => {
+        const championTile = document.createElement('div');
         championTile.classList.add('champion-tile');
-
-        let championImage = document.createElement('img');
-        championImage.src = imageURL;
-        championImage.alt = championName;
-
-        let championNameElement = document.createElement('h3');
-        championNameElement.textContent = championName;
-        
-        championTile.appendChild(championImage);
-        championTile.appendChild(championNameElement);
+        championTile.innerHTML = `
+          <img src="${champion.icon}" alt="${champion.name}">
+          <h3>${champion.name}</h3>
+        `;
         championGrid.appendChild(championTile);
-        
-
-    }
-}).catch(error => console.log(error));
+      });
+    })
+    .catch(error => console.error(error));
