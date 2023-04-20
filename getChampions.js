@@ -19,6 +19,7 @@ fetch('https://ddragon.leagueoflegends.com/cdn/13.8.1/data/en_US/champion.json')
           <img src="${champion.icon}" alt="${champion.name}">
           <h3>${champion.name}</h3>
         `;
+        championTile.setAttribute('data-champion-name', champion.name.toLowerCase());
         championGrid.appendChild(championTile);
       });
     })
