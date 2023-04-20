@@ -3,8 +3,9 @@ fetch('https://ddragon.leagueoflegends.com/cdn/13.8.1/data/en_US/champion.json')
 .then(data => {
     let championGrid = document.querySelector('.champion-grid');
     for (const champion in data.data) {
-        const championName = data.data[champion].id;
-        const imageURL = `https://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/${championName}.png`;
+        const championImg = data.data[champion].image.full;
+        const championName = data.data[champion].name;
+        const imageURL = `https://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/${championImg}`;
 
         let championTile = document.createElement('div');
         championTile.classList.add('champion-tile');
