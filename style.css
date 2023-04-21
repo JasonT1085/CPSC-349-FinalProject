@@ -39,6 +39,7 @@ body {
   }
   
   .champion-tile {
+	height: max-content;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
