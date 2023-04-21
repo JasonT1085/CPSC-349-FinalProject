@@ -1,0 +1,1310 @@
+{
+    "type": "champion",
+    "version": "13.8.1",
+    "data": {
+        "Aatrox": {
+            "id": "Aatrox",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.90",
+                "winRate": "46.50"
+            }
+        },
+        "Ahri": {
+            "id": "Ahri",
+            "stats": {
+                "dmgDealt": "1.0",
+                "dmgTaken": "1.0",
+                "winRate": "49.63"
+            }
+        },
+        "Akali": {
+            "id": "Akali",
+            "stats": {
+                "dmgDealt": "1.10",
+                "dmgTaken": "0.85",
+                "winRate": "49.41"
+            }
+        },
+        "Akshan": {
+            "id": "Akshan",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.95",
+                "winRate": "51.15"
+            }
+        },
+        "Alistar": {
+            "id": "Alistar",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.10",
+                "winRate": "49.21"
+            }
+        },
+        "Amumu": {
+            "id": "Amumu",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.05",
+                "winRate": "47.63"
+            }
+        },
+        "Anivia": {
+            "id": "Anivia",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "46.39"
+            }
+        },
+        "Annie": {
+            "id": "Annie",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.05",
+                "winRate": "55.22"
+            }
+        },
+        "Aphelios": {
+            "id": "Aphelios",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "48.61"
+            }
+        },
+        "Ashe": {
+            "id": "Ashe",
+            "stats": {
+                "dmgDealt": "0.85",
+                "dmgTaken": "1.15",
+                "winRate": "47.39"
+            }
+        },
+        "AurelionSol": {
+            "id": "AurelionSol",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "53.46"
+            }
+        },
+        "Azir": {
+            "id": "Azir",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.95",
+                "winRate": "51.73"
+            }
+        },
+        "Bard": {
+            "id": "Bard",
+            "stats": {
+                "dmgDealt": "1.15",
+                "dmgTaken": "0.80",
+                "winRate": "48.93"
+            }
+        },
+        "Belveth": {
+            "id": "Belveth",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "48.06"
+            }
+        },
+        "Blitzcrank": {
+            "id": "Blitzcrank",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "51.75"
+            }
+        },
+        "Brand": {
+            "id": "Brand",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.10",
+                "winRate": "50.71"
+            }
+        },
+        "Braum": {
+            "id": "Braum",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "52.04"
+            }
+        },
+        "Caitlyn": {
+            "id": "Caitlyn",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.05",
+                "winRate": "49.11"
+            }
+        },
+        "Camille": {
+            "id": "Camille",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.95",
+                "winRate": "51.35"
+            }
+        },
+        "Cassiopeia": {
+            "id": "Cassiopeia",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "50.15"
+            }
+        },
+        "Chogath": {
+            "id": "Chogath",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "53.64"
+            }
+        },
+        "Corki": {
+            "id": "Corki",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.95",
+                "winRate": "46.27"
+            }
+        },
+        "Darius": {
+            "id": "Darius",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "48.48"
+            }
+        },
+        "Diana": {
+            "id": "Diana",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "49.74"
+            }
+        },
+        "Draven": {
+            "id": "Draven",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.95",
+                "winRate": "52.66"
+            }
+        },
+        "DrMundo": {
+            "id": "DrMundo",
+            "stats": {
+                "dmgDealt": "0.90",
+                "dmgTaken": "1.10",
+                "winRate": "50.63"
+            }
+        },
+        "Ekko": {
+            "id": "Ekko",
+            "stats": {
+                "dmgDealt": "1.10",
+                "dmgTaken": "1.00",
+                "winRate": "48.43"
+            }
+        },
+        "Elise": {
+            "id": "Elise",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.90",
+                "winRate": "51.47"
+            }
+        },
+        "Evelynn": {
+            "id": "Evelynn",
+            "stats": {
+                "dmgDealt": "1.15",
+                "dmgTaken": "0.85",
+                "winRate": "50.99"
+            }
+        },
+        "Ezreal": {
+            "id": "Ezreal",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.03",
+                "winRate": "49.67"
+            }
+        },
+        "FiddleSticks": {
+            "id": "FiddleSticks",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.05",
+                "winRate": "50.69"
+            }
+        },
+        "Fiora": {
+            "id": "Fiora",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.95",
+                "winRate": "49.36"
+            }
+        },
+        "Fizz": {
+            "id": "Fizz",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.95",
+                "winRate": "49.65"
+            }
+        },
+        "Galio": {
+            "id": "Galio",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.05",
+                "winRate": "52.94"
+            }
+        },
+        "Gangplank": {
+            "id": "Gangplank",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "47.65"
+            }
+        },
+        "Garen": {
+            "id": "Garen",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.95",
+                "winRate": "47.14"
+            }
+        },
+        "Gnar": {
+            "id": "Gnar",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.95",
+                "winRate": "46.66"
+            }
+        },
+        "Gragas": {
+            "id": "Gragas",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.95",
+                "winRate": "48.45"
+            }
+        },
+        "Graves": {
+            "id": "Graves",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "49.45"
+            }
+        },
+        "Gwen": {
+            "id": "Gwen",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "1.00",
+                "winRate": "50.79"
+            }
+        },
+        "Hecarim": {
+            "id": "Hecarim",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.95",
+                "winRate": "45.97"
+            }
+        },
+        "Heimerdinger": {
+            "id": "Heimerdinger",
+            "stats": {
+                "dmgDealt": "0.90",
+                "dmgTaken": "1.10",
+                "winRate": "49.97"
+            }
+        },
+        "Illaoi": {
+            "id": "Illaoi",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.05",
+                "winRate": "51.72"
+            }
+        },
+        "Irelia": {
+            "id": "Irelia",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "45.90"
+            }
+        },
+        "Ivern": {
+            "id": "Ivern",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.00",
+                "winRate": "50.25"
+            }
+        },
+        "Janna": {
+            "id": "Janna",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.05",
+                "winRate": "53.29"
+            }
+        },
+        "JarvanIV": {
+            "id": "JarvanIV",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.95",
+                "winRate": "49.26"
+            }
+        },
+        "Jax": {
+            "id": "Jax",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.97",
+                "winRate": "48.99"
+            }
+        },
+        "Jayce": {
+            "id": "Jayce",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "51.09"
+            }
+        },
+        "Jhin": {
+            "id": "Jhin",
+            "stats": {
+                "dmgDealt": "0.90",
+                "dmgTaken": "1.00",
+                "winRate": "51.22"
+            }
+        },
+        "Jinx": {
+            "id": "Jinx",
+            "stats": {
+                "dmgDealt": "0.90",
+                "dmgTaken": "1.05",
+                "winRate": "52.92"
+            }
+        },
+        "Kaisa": {
+            "id": "Kaisa",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.95",
+                "winRate": "48.91"
+            }
+        },
+        "Kalista": {
+            "id": "Kalista",
+            "stats": {
+                "dmgDealt": "1.10",
+                "dmgTaken": "0.90",
+                "winRate": "50.72"
+            }
+        },
+        "Karma": {
+            "id": "Karma",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "46.10"
+            }
+        },
+        "Karthus": {
+            "id": "Karthus",
+            "stats": {
+                "dmgDealt": "0.90",
+                "dmgTaken": "1.05",
+                "winRate": "48.13"
+            }
+        },
+        "Kassadin": {
+            "id": "Kassadin",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "46.79"
+            }
+        },
+        "Katarina": {
+            "id": "Katarina",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "46.01"
+            }
+        },
+        "Kayle": {
+            "id": "Kayle",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.03",
+                "winRate": "54.24"
+            }
+        },
+        "Kayn": {
+            "id": "Kayn",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "1.00",
+                "winRate": "50.47"
+            }
+        },
+        "Kennen": {
+            "id": "Kennen",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.95",
+                "winRate": "47.01"
+            }
+        },
+        "Khazix": {
+            "id": "Khazix",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.90",
+                "winRate": "48.03"
+            }
+        },
+        "Kindred": {
+            "id": "Kindred",
+            "stats": {
+                "dmgDealt": "1.10",
+                "dmgTaken": "0.90",
+                "winRate": "50.25"
+            }
+        },
+        "Kled": {
+            "id": "Kled",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "44.88"
+            }
+        },
+        "KogMaw": {
+            "id": "KogMaw",
+            "stats": {
+                "dmgDealt": "0.88",
+                "dmgTaken": "1.10",
+                "winRate": "51.88"
+            }
+        },
+        "KSante": {
+            "id": "KSante",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.90",
+                "winRate": "50.40"
+            }
+        },
+        "Leblanc": {
+            "id": "Leblanc",
+            "stats": {
+                "dmgDealt": "1.10",
+                "dmgTaken": "0.90",
+                "winRate": "44.12"
+            }
+        },
+        "LeeSin": {
+            "id": "LeeSin",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.95",
+                "winRate": "48.14"
+            }
+        },
+        "Leona": {
+            "id": "Leona",
+            "stats": {
+                "dmgDealt": "0.90",
+                "dmgTaken": "1.05",
+                "winRate": "49.38"
+            }
+        },
+        "Lillia": {
+            "id": "Lillia",
+            "stats": {
+                "dmgDealt": "0.90",
+                "dmgTaken": "1.00",
+                "winRate": "55.23"
+            }
+        },
+        "Lissandra": {
+            "id": "Lissandra",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.00",
+                "winRate": "51.88"
+            }
+        },
+        "Lucian": {
+            "id": "Lucian",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.95",
+                "winRate": "48.76"
+            }
+        },
+        "Lulu": {
+            "id": "Lulu",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "1.00",
+                "winRate": "48.35"
+            }
+        },
+        "Lux": {
+            "id": "Lux",
+            "stats": {
+                "dmgDealt": "0.85",
+                "dmgTaken": "1.10",
+                "winRate": "51.26"
+            }
+        },
+        "Malphite": {
+            "id": "Malphite",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "50.64"
+            }
+        },
+        "Malzahar": {
+            "id": "Malzahar",
+            "stats": {
+                "dmgDealt": "0.92",
+                "dmgTaken": "0.92",
+                "winRate": "54.67"
+            }
+        },
+        "Maokai": {
+            "id": "Maokai",
+            "stats": {
+                "dmgDealt": "0.80",
+                "dmgTaken": "1.05",
+                "winRate": "50.12"
+            }
+        },
+        "MasterYi": {
+            "id": "MasterYi",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.97",
+                "winRate": "49.34"
+            }
+        },
+        "Milio": {
+            "id": "Milio",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "55.04"
+            }
+        },
+        "MissFortune": {
+            "id": "MissFortune",
+            "stats": {
+                "dmgDealt": "0.90",
+                "dmgTaken": "1.15",
+                "winRate": "49.33"
+            }
+        },
+        "MonkeyKing": {
+            "id": "MonkeyKing",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "49.47"
+            }
+        },
+        "Mordekaiser": {
+            "id": "Mordekaiser",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.05",
+                "winRate": "48.72"
+            }
+        },
+        "Morgana": {
+            "id": "Morgana",
+            "stats": {
+                "dmgDealt": "0.94",
+                "dmgTaken": "1.05",
+                "winRate": "52.30"
+            }
+        },
+        "Nami": {
+            "id": "Nami",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.05",
+                "winRate": "52.41"
+            }
+        },
+        "Nasus": {
+            "id": "Nasus",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.05",
+                "winRate": "54.12"
+            }
+        },
+        "Nautilus": {
+            "id": "Nautilus",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.08",
+                "winRate": "51.95"
+            }
+        },
+        "Neeko": {
+            "id": "Neeko",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "52.44"
+            }
+        },
+        "Nidalee": {
+            "id": "Nidalee",
+            "stats": {
+                "dmgDealt": "1.10",
+                "dmgTaken": "1.00",
+                "winRate": "47.82"
+            }
+        },
+        "Nilah": {
+            "id": "Nilah",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.00",
+                "winRate": "52.20"
+            }
+        },
+        "Nocturne": {
+            "id": "Nocturne",
+            "stats": {
+                "dmgDealt": "1.10",
+                "dmgTaken": "0.85",
+                "winRate": "51..06"
+            }
+        },
+        "Nunu": {
+            "id": "Nunu",
+            "stats": {
+                "dmgDealt": "1.10",
+                "dmgTaken": "0.90",
+                "winRate": "46.35"
+            }
+        },
+        "Olaf": {
+            "id": "Olaf",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.00",
+                "winRate": "46.75"
+            }
+        },
+        "Orianna": {
+            "id": "Orianna",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "51.66"
+            }
+        },
+        "Ornn": {
+            "id": "Ornn",
+            "stats": {
+                "dmgDealt": "0.90",
+                "dmgTaken": "1.05",
+                "winRate": "52.32"
+            }
+        },
+        "Pantheon": {
+            "id": "Pantheon",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "47.34"
+            }
+        },
+        "Poppy": {
+            "id": "Poppy",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "50.77"
+            }
+        },
+        "Pyke": {
+            "id": "Pyke",
+            "stats": {
+                "dmgDealt": "1.10",
+                "dmgTaken": "0.85",
+                "winRate": "51.32"
+            }
+        },
+        "Qiyana": {
+            "id": "Qiyana",
+            "stats": {
+                "dmgDealt": "1.15",
+                "dmgTaken": "0.80",
+                "winRate": "49.84"
+            }
+        },
+        "Quinn": {
+            "id": "Quinn",
+            "stats": {
+                "dmgDealt": "1.10",
+                "dmgTaken": "0.90",
+                "winRate": "46.70"
+            }
+        },
+        "Rakan": {
+            "id": "Rakan",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "53.14"
+            }
+        },
+        "Rammus": {
+            "id": "Rammus",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "50.18"
+            }
+        },
+        "RekSai": {
+            "id": "RekSai",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.85",
+                "winRate": "45.41"
+            }
+        },
+        "Rell": {
+            "id": "Rell",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.05",
+                "winRate": "51.95"
+            }
+        },
+        "Renata": {
+            "id": "Renata",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.05",
+                "winRate": "50.55"
+            }
+        },
+        "Renekton": {
+            "id": "Renekton",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "1.00",
+                "winRate": "47.16"
+            }
+        },
+        "Rengar": {
+            "id": "Rengar",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.92",
+                "winRate": "44.98"
+            }
+        },
+        "Riven": {
+            "id": "Riven",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.92",
+                "winRate": "52.16"
+            }
+        },
+        "Rumble": {
+            "id": "Rumble",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.95",
+                "winRate": "52.61"
+            }
+        },
+        "Ryze": {
+            "id": "Ryze",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.90",
+                "winRate": "50.33"
+            }
+        },
+        "Samira": {
+            "id": "Samira",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.05",
+                "winRate": "50.27"
+            }
+        },
+        "Sejuani": {
+            "id": "Sejuani",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.92",
+                "winRate": "51.08"
+            }
+        },
+        "Senna": {
+            "id": "Senna",
+            "stats": {
+                "dmgDealt": "0.94",
+                "dmgTaken": "1.05",
+                "winRate": "54.43"
+            }
+        },
+        "Seraphine": {
+            "id": "Seraphine",
+            "stats": {
+                "dmgDealt": "0.85",
+                "dmgTaken": "1.20",
+                "winRate": "52.66"
+            }
+        },
+        "Sett": {
+            "id": "Sett",
+            "stats": {
+                "dmgDealt": "0.90",
+                "dmgTaken": "1.10",
+                "winRate": "48.43"
+            }
+        },
+        "Shaco": {
+            "id": "Shaco",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "1.00",
+                "winRate": "47.77"
+            }
+        },
+        "Shen": {
+            "id": "Shen",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "54.30"
+            }
+        },
+        "Shyvana": {
+            "id": "Shyvana",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "0.95",
+                "winRate": "48.73"
+            }
+        },
+        "Singed": {
+            "id": "Singed",
+            "stats": {
+                "dmgDealt": "0.90",
+                "dmgTaken": "1.05",
+                "winRate": "53.06"
+            }
+        },
+        "Sion": {
+            "id": "Sion",
+            "stats": {
+                "dmgDealt": "0.90",
+                "dmgTaken": "1.10",
+                "winRate": "54.05"
+            }
+        },
+        "Sivir": {
+            "id": "Sivir",
+            "stats": {
+                "dmgDealt": "0.85",
+                "dmgTaken": "1.05",
+                "winRate": "51.51"
+            }
+        },
+        "Skarner": {
+            "id": "Skarner",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "51.06"
+            }
+        },
+        "Sona": {
+            "id": "Sona",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.10",
+                "winRate": "51.08"
+            }
+        },
+        "Soraka": {
+            "id": "Soraka",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "47.42"
+            }
+        },
+        "Swain": {
+            "id": "Swain",
+            "stats": {
+                "dmgDealt": "0.90",
+                "dmgTaken": "1.15",
+                "winRate": "50.80"
+            }
+        },
+        "Sylas": {
+            "id": "Sylas",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.95",
+                "winRate": "49.51"
+            }
+        },
+        "Syndra": {
+            "id": "Syndra",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "1.00",
+                "winRate": "49.37"
+            }
+        },
+        "TahmKench": {
+            "id": "TahmKench",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.95",
+                "winRate": "51.92"
+            }
+        },
+        "Taliyah": {
+            "id": "Taliyah",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "1.00",
+                "winRate": "52.47"
+            }
+        },
+        "Talon": {
+            "id": "Talon",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.95",
+                "winRate": "46.84"
+            }
+        },
+        "Taric": {
+            "id": "Taric",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.05",
+                "winRate": "50.35"
+            }
+        },
+        "Teemo": {
+            "id": "Teemo",
+            "stats": {
+                "dmgDealt": "0.90",
+                "dmgTaken": "1.10",
+                "winRate": "50.46"
+            }
+        },
+        "Thresh": {
+            "id": "Thresh",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "51.47"
+            }
+        },
+        "Tristana": {
+            "id": "Tristana",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "47.18"
+            }
+        },
+        "Trundle": {
+            "id": "Trundle",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.05",
+                "winRate": "50.21"
+            }
+        },
+        "Tryndamere": {
+            "id": "Tryndamere",
+            "stats": {
+                "dmgDealt": "1.15",
+                "dmgTaken": "0.85",
+                "winRate": "52.16"
+            }
+        },
+        "TwistedFate": {
+            "id": "TwistedFate",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "50.86"
+            }
+        },
+        "Twitch": {
+            "id": "Twitch",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "48.49"
+            }
+        },
+        "Udyr": {
+            "id": "Udyr",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "48.37"
+            }
+        },
+        "Urgot": {
+            "id": "Urgot",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.10",
+                "winRate": "48.78"
+            }
+        },
+        "Varus": {
+            "id": "Varus",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.05",
+                "winRate": "50.67"
+            }
+        },
+        "Vayne": {
+            "id": "Vayne",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.95",
+                "winRate": "50.27"
+            }
+        },
+        "Veigar": {
+            "id": "Veigar",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.05",
+                "winRate": "55.80"
+            }
+        },
+        "Velkoz": {
+            "id": "Velkoz",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.05",
+                "winRate": "51.12"
+            }
+        },
+        "Vex": {
+            "id": "Vex",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "53.31"
+            }
+        },
+        "Vi": {
+            "id": "Vi",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.95",
+                "winRate": "50.10"
+            }
+        },
+        "Viego": {
+            "id": "Viego",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.95",
+                "winRate": "50.51"
+            }
+        },
+        "Viktor": {
+            "id": "Viktor",
+            "stats": {
+                "dmgDealt": "0.95",
+                "dmgTaken": "1.05",
+                "winRate": "49.31"
+            }
+        },
+        "Vladimir": {
+            "id": "Vladimir",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "55.57"
+            }
+        },
+        "Volibear": {
+            "id": "Volibear",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "48.15"
+            }
+        },
+        "Warwick": {
+            "id": "Warwick",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "0.95",
+                "winRate": "49.57"
+            }
+        },
+        "Xayah": {
+            "id": "Xayah",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "49.58"
+            }
+        },
+        "Xerath": {
+            "id": "Xerath",
+            "stats": {
+                "dmgDealt": "0.90",
+                "dmgTaken": "1.00",
+                "winRate": "48.13"
+            }
+        },
+        "XinZhao": {
+            "id": "XinZhao",
+            "stats": {
+                "dmgDealt": "#1",
+                "dmgTaken": "#2",
+                "winRate": "48.22"
+            }
+        },
+        "Yasuo": {
+            "id": "Yasuo",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "46.99"
+            }
+        },
+        "Yone": {
+            "id": "Yone",
+            "stats": {
+                "dmgDealt": "1.03",
+                "dmgTaken": "0.97",
+                "winRate": "46.08"
+            }
+        },
+        "Yorick": {
+            "id": "Yorick",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "1.00",
+                "winRate": "50.47"
+            }
+        },
+        "Yuumi": {
+            "id": "Yuumi",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "1.00",
+                "winRate": "48.65"
+            }
+        },
+        "Zac": {
+            "id": "Zac",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.96",
+                "winRate": "49.80"
+            }
+        },
+        "Zed": {
+            "id": "Zed",
+            "stats": {
+                "dmgDealt": "1.00",
+                "dmgTaken": "0.90",
+                "winRate": "49.90"
+            }
+        },
+        "Zeri": {
+            "id": "Zeri",
+            "stats": {
+                "dmgDealt": "1.10",
+                "dmgTaken": "0.95",
+                "winRate": "52.80"
+            }
+        },
+        "Ziggs": {
+            "id": "Ziggs",
+            "stats": {
+                "dmgDealt": "0.80",
+                "dmgTaken": "1.20",
+                "winRate": "50.65"
+            }
+        },
+        "Zilean": {
+            "id": "Zilean",
+            "stats": {
+                "dmgDealt": "1.05",
+                "dmgTaken": "1.00",
+                "winRate": "45.56"
+            }
+        },
+        "Zoe": {
+            "id": "Zoe",
+            "stats": {
+                "dmgDealt": "1.10",
+                "dmgTaken": "0.95",
+                "winRate": "49.82"
+            }
+        },
+        "Zyra": {
+            "id": "Zyra",
+            "stats": {
+                "dmgDealt": "0.90",
+                "dmgTaken": "1.05",
+                "winRate": "52.01"
+            }
+        }
+    }
+}
