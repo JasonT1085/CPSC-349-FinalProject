@@ -42,20 +42,23 @@ fetch('https://ddragon.leagueoflegends.com/cdn/13.8.1/data/en_US/champion.json')
         popup.style.top = y + 'px';
       }
     }
+    let isFetchingStats = false;
 
     function handleChampionTileMouseEnter(e) {
       const championId = e.currentTarget.getAttribute('data-champion-id');
-      if (!statsData[championId]) { // check if stats data has already been fetched
+      if (!statsData[championId] && !isFetchingStats) { // check if stats data has already been fetched and is not currently being fetched
+        isFetchingStats = true; // set flag to true
         fetch('json/championStats.json')
           .then(response => response.json())
           .then(data => {
             statsData = data.data; // store fetched stats data in object
             console.log(statsData[championId]);
-            displayChampionStatsPopup(e,championId, statsData[championId]);
+            isFetchingStats = false; // set flag to false
+            displayChampionStatsPopup(e, championId, statsData[championId]);
           })
           .catch(error => console.error(error));
-      } else {
-        displayChampionStatsPopup(e,championId, statsData[championId]);
+      } else if (!isFetchingStats) { // check if data is not being fetched
+        displayChampionStatsPopup(e, championId, statsData[championId]);
       }
     }
 

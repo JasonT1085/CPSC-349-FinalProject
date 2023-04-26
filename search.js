@@ -9,7 +9,7 @@ searchInput.addEventListener('input', function() {
   championTiles.forEach(championTile => {
     const championName = championTile.getAttribute('data-champion-name');
 
-    if (championName.startsWith(searchTerm)) {
+    if (championName.includes(searchTerm)) {
       tilesToShow.push(championTile);
     } else {
       championTile.classList.add('hidden');
