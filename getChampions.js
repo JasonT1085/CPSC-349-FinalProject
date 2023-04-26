@@ -23,34 +23,53 @@ fetch('https://ddragon.leagueoflegends.com/cdn/13.8.1/data/en_US/champion.json')
         <h3>${champion.name}</h3>
       `;
       championTile.setAttribute('data-champion-name', champion.name.toLowerCase());
-      championTile.setAttribute('data-champion-id', champion.id.toLowerCase());
-      
+      championTile.setAttribute('data-champion-id', champion.id);
+
       championTile.addEventListener('mouseenter', handleChampionTileMouseEnter);
       championTile.addEventListener('mouseleave', handleChampionTileMouseLeave);
+      championTile.addEventListener('mousemove', handleChampionTileMouseMove);
       championGrid.appendChild(championTile);
     });
 
+    function handleChampionTileMouseMove(e) {
+      const popup = document.querySelector('.champion-stats-container');
+      if (popup) {
+        const xoffset = 0;
+        const yoffset = -popup.offsetHeight -10;
+        const x = e.clientX + xoffset;
+        const y = e.clientY + yoffset;
+        popup.style.left = x + 'px';
+        popup.style.top = y + 'px';
+      }
+    }
+
     function handleChampionTileMouseEnter(e) {
-      const championId = e.currentTarget.getAttribute('data-champion-id').toLowerCase();
+      const championId = e.currentTarget.getAttribute('data-champion-id');
       if (!statsData[championId]) { // check if stats data has already been fetched
         fetch('json/championStats.json')
           .then(response => response.json())
           .then(data => {
             statsData = data.data; // store fetched stats data in object
-            displayChampionStatsPopup(e, statsData[championId]);
+            console.log(statsData[championId]);
+            displayChampionStatsPopup(e,championId, statsData[championId]);
           })
           .catch(error => console.error(error));
       } else {
-        displayChampionStatsPopup(championId, statsData[championId]);
+        displayChampionStatsPopup(e,championId, statsData[championId]);
       }
     }
 
     function handleChampionTileMouseLeave(e) {
       const popup = document.querySelector('.champion-stats-container');
-      if (popup) popup.remove();
+      if (popup) {
+        const championTile = e.currentTarget;
+        if (!championTile.contains(e.relatedTarget)) {
+          popup.remove();
+        }
+      }
     }
 
-    function displayChampionStatsPopup(championId, stats) {
+    function displayChampionStatsPopup(e,championId, championStats) {
 
       const championStatsContainer = document.createElement('div');
       championStatsContainer.classList.add('champion-stats-container');
@@ -59,40 +78,36 @@ fetch('https://ddragon.leagueoflegends.com/cdn/13.8.1/data/en_US/champion.json')
       const championStatsInfo = document.createElement('div');
       championStatsInfo.classList.add('champion-stats');
       championStatsInfo.innerHTML = `
-      <img src="${champions.find(champion => champion.id.toLowerCase() === championId).image}" 
-      alt="${champions.find(champion => champion.id.toLowerCase() === championId).name}'s splash image"></img>`;
+      <img src="${champions.find(champion => champion.id.toLowerCase() === championId.toLowerCase()).image}" 
+      alt="${champions.find(champion => champion.id.toLowerCase() === championId.toLowerCase()).name}'s splash image"></img>`;
 
-      const championStatsHeader = document.createElement('h4');
-      championStatsHeader.classList.add('champion-stats-header');
-      championStatsHeader.textContent = `${champions.find(champion => champion.id.toLowerCase() === championId).name} Stats`;
+      // const championStatsHeader = document.createElement('h4');
+      // championStatsHeader.classList.add('champion-stats-header');
+      // championStatsHeader.textContent = `${champions.find(champion => champion.id.toLowerCase() === championId.toLowerCase()).name} Stats`;
 
-      const championStatsTable = document.createElement('table');
-      championStatsTable.classList.add('champion-stats-table');
+      // const championStatsTable = document.createElement('table');
+      // championStatsTable.classList.add('champion-stats-table');
 
       // create table rows and cells for each stat
-      for (const stat in stats) {
-        const row = document.createElement('tr');
+      // for (const stat in championStats) {
+      //   const row = document.createElement('tr');
 
-        const statNameCell = document.createElement('td');
-        statNameCell.textContent = stat.replace(/([A-Z])/g, ' $1').toUpperCase(); // add space before capitalized letters in stat name
-        row.appendChild(statNameCell);
+      //   const statNameCell = document.createElement('td');
+      //   statNameCell.textContent = stat.replace(/([A-Z])/g, ' $1').toUpperCase(); // add space before capitalized letters in stat name
+      //   row.appendChild(statNameCell);
 
-        const statValueCell = document.createElement('td');
-        statValueCell.textContent = stats[stat];
-        row.appendChild(statValueCell);
+      //   const statValueCell = document.createElement('td');
+      //   statValueCell.textContent = stats[stat];
+      //   row.appendChild(statValueCell);
 
-        championStatsTable.appendChild(row);
-      }
+      //   championStatsTable.appendChild(row);
+      // }
 
-      championStatsContainer.appendChild(championStatsHeader);
-      championStatsContainer.appendChild(championStatsTable);
+      championStatsContainer.appendChild(championStatsInfo);
+      // championStatsContainer.appendChild(championStatsHeader);
+      // championStatsContainer.appendChild(championStatsTable);
       document.body.appendChild(championStatsContainer);
 
-      // position popup next to champion tile
-      const x = e.clientX + 10;
-      const y = e.clientY + 10;
-      championStatsContainer.style.top = `${y}px`;
-      championStatsContainer.style.left = `${x}px`;
     }
   })
   .catch(error => console.error(error));
