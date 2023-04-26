@@ -35,9 +35,9 @@ fetch('https://ddragon.leagueoflegends.com/cdn/13.8.1/data/en_US/champion.json')
       const popup = document.querySelector('.champion-stats-container');
       if (popup) {
         const xoffset = 0;
-        const yoffset = -popup.offsetHeight -10;
-        const x = e.clientX + xoffset;
-        const y = e.clientY + yoffset;
+        const yoffset = -popup.offsetHeight - 10;
+        const x = e.clientX + xoffset + window.scrollX;
+        const y = e.clientY + yoffset + window.scrollY;
         popup.style.left = x + 'px';
         popup.style.top = y + 'px';
       }
@@ -80,35 +80,20 @@ fetch('https://ddragon.leagueoflegends.com/cdn/13.8.1/data/en_US/champion.json')
 
       const championStatsInfo = document.createElement('div');
       championStatsInfo.classList.add('champion-stats');
-      championStatsInfo.innerHTML = `
-      <img src="${champions.find(champion => champion.id.toLowerCase() === championId.toLowerCase()).image}" 
-      alt="${champions.find(champion => champion.id.toLowerCase() === championId.toLowerCase()).name}'s splash image"></img>`;
 
-      // const championStatsHeader = document.createElement('h4');
-      // championStatsHeader.classList.add('champion-stats-header');
-      // championStatsHeader.textContent = `${champions.find(champion => champion.id.toLowerCase() === championId.toLowerCase()).name} Stats`;
 
-      // const championStatsTable = document.createElement('table');
-      // championStatsTable.classList.add('champion-stats-table');
+      const championImage = document.createElement('img');
+      championImage.src = champions.find(champion => champion.id.toLowerCase() === championId.toLowerCase()).image;
+      championImage.alt = `${champions.find(champion => champion.id.toLowerCase() === championId.toLowerCase()).name}'s splash image`;
+      championStatsInfo.appendChild(championImage);
 
-      // create table rows and cells for each stat
-      // for (const stat in championStats) {
-      //   const row = document.createElement('tr');
-
-      //   const statNameCell = document.createElement('td');
-      //   statNameCell.textContent = stat.replace(/([A-Z])/g, ' $1').toUpperCase(); // add space before capitalized letters in stat name
-      //   row.appendChild(statNameCell);
-
-      //   const statValueCell = document.createElement('td');
-      //   statValueCell.textContent = stats[stat];
-      //   row.appendChild(statValueCell);
-
-      //   championStatsTable.appendChild(row);
-      // }
+      const championText = document.createElement('div');
+      championText.classList.add('champion-stats-text');
+      championText.textContent = "Your text here"; // replace with the actual text you want to display
+      championStatsInfo.appendChild(championText);
 
       championStatsContainer.appendChild(championStatsInfo);
-      // championStatsContainer.appendChild(championStatsHeader);
-      // championStatsContainer.appendChild(championStatsTable);
+
       document.body.appendChild(championStatsContainer);
 
     }

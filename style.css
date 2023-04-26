@@ -71,12 +71,31 @@ body {
 
 .champion-stats-container
 {
-	display: block;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+	overflow: hidden;
+	background-color: #fff;
 	position: absolute;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	display: block;
+	opacity: 0;
+	animation:  fadeIn 0.3s ease-in-out forwards;
 }
+
+@keyframes fadeIn
+{
+	from { 
+		opacity: 0;
+		transform: translateY(0%);
+	}
+	to   { opacity: 1; 
+		transform: translateY(-10px);
+	}
+}
+
 
 .champion-stats-container img {
 	display: flex;
@@ -85,4 +104,19 @@ body {
 	text-align: center;
 	height: 200px;
 	width: auto;
+  }
+
+  .champion-stats {
+	position: relative;
+  }
+  
+  .champion-stats-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 24px; 
+
+	-webkit-text-stroke: 0.5px black;
   }
