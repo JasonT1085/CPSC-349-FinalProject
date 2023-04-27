@@ -242,8 +242,8 @@
                 "winRate": "49.67"
             }
         },
-        "FiddleSticks": {
-            "id": "FiddleSticks",
+        "Fiddlesticks": {
+            "id": "Fiddlesticks",
             "stats": {
                 "dmgDealt": "0.95",
                 "dmgTaken": "1.05",

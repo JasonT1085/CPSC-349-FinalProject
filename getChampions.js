@@ -52,6 +52,7 @@ fetch('https://ddragon.leagueoflegends.com/cdn/13.8.1/data/en_US/champion.json')
           .then(response => response.json())
           .then(data => {
             statsData = data.data; // store fetched stats data in object
+            console.log(championId);
             console.log(statsData[championId]);
             isFetchingStats = false; // set flag to false
             displayChampionStatsPopup(e, championId, statsData[championId]);
@@ -63,38 +64,76 @@ fetch('https://ddragon.leagueoflegends.com/cdn/13.8.1/data/en_US/champion.json')
     }
 
     function handleChampionTileMouseLeave(e) {
-      const popup = document.querySelector('.champion-stats-container');
+      const popup = document.querySelectorAll('.champion-stats-container');
       if (popup) {
         const championTile = e.currentTarget;
         if (!championTile.contains(e.relatedTarget)) {
-          popup.remove();
+          popup.forEach(popup => popup.remove());
         }
       }
     }
 
     function displayChampionStatsPopup(e,championId, championStats) {
 
+      let championDamageDealt = Math.floor(championStats.stats.dmgDealt * 100);
+      let championDamageTaken = Math.floor(championStats.stats.dmgTaken * 100);
+      let championWinRate = championStats.stats.winRate;
+      
       const championStatsContainer = document.createElement('div');
       championStatsContainer.classList.add('champion-stats-container');
       championStatsContainer.setAttribute('data-champion-id', championId);
-
+      
       const championStatsInfo = document.createElement('div');
       championStatsInfo.classList.add('champion-stats');
-
-
+      
       const championImage = document.createElement('img');
       championImage.src = champions.find(champion => champion.id.toLowerCase() === championId.toLowerCase()).image;
       championImage.alt = `${champions.find(champion => champion.id.toLowerCase() === championId.toLowerCase()).name}'s splash image`;
       championStatsInfo.appendChild(championImage);
-
+      
       const championText = document.createElement('div');
       championText.classList.add('champion-stats-text');
-      championText.textContent = "Your text here"; // replace with the actual text you want to display
+
+      const gridContainer = document.createElement('div');
+      gridContainer.classList.add('champion-stats-grid');
+      championText.appendChild(gridContainer);
+      
+      // create grid items
+      const winRateItem = document.createElement('span');
+      winRateItem.classList.add('win-rate-item');
+      if (championWinRate > 50) {
+        winRateItem.classList.add('green-text');
+      } else if (championWinRate < 50) {
+        winRateItem.classList.add('red-text');
+      }
+      winRateItem.textContent = `Winrate: ${championWinRate}%`;
+      gridContainer.appendChild(winRateItem);
+
+      const damageDealtItem = document.createElement('span');
+      damageDealtItem.classList.add('damage-dealt-item');
+      damageDealtItem.textContent = `Damage Dealt: ${championDamageDealt}%`;
+      if (championDamageDealt > 100) {
+        damageDealtItem.classList.add('green-text');
+      } else if (championDamageDealt < 100) {
+        damageDealtItem.classList.add('red-text');
+      }
+      gridContainer.appendChild(damageDealtItem);
+
+      const damageTakenItem = document.createElement('span');
+      damageTakenItem.classList.add('damage-taken-item');
+      if (championDamageTaken > 100) {
+        damageTakenItem.classList.add('red-text');
+      } else if (championDamageTaken < 100) {
+        damageTakenItem.classList.add('green-text');
+      }
+      damageTakenItem.textContent = `Damage Taken: ${championDamageTaken}%`;
+      gridContainer.appendChild(damageTakenItem);
+
       championStatsInfo.appendChild(championText);
-
       championStatsContainer.appendChild(championStatsInfo);
-
+      
       document.body.appendChild(championStatsContainer);
+      
 
     }
   })

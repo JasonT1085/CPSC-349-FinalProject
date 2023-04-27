@@ -120,3 +120,45 @@ body {
 
 	-webkit-text-stroke: 0.5px black;
   }
+
+  .green-text {
+	color: green;
+  }
+  
+  .red-text {
+	color: red;
+  }
+
+  .champion-stats-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 10px;
+  }
+  
+  .champion-stats-text {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, auto);
+	gap: 5px;
+	align-items: center;
+	justify-items: center;
+}
+
+.win-rate-item {
+	grid-column: 2;
+	grid-row: 1;
+	text-align: center;
+}
+
+.damage-dealt-item {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.damage-taken-item {
+	grid-column: 3;
+	grid-row: 2;
+}
+
+  
