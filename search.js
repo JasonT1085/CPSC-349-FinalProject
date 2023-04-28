@@ -29,30 +29,29 @@ function updateGrid() {
 }
 
 function updateColumns() {
-  switch(window.innerWidth) {
-    case 320:
-      numColumns = 2;
-      break;
-    case 375:
-      numColumns = 3;
-      break;
-    case 414:
-      numColumns = 4;
-      break;
-    case 768:
-      numColumns = 5;
-      break;
-    case 1280:
-      numColumns = 6;
-      break;
+  const width = window.innerWidth;
+  if (width < 436) {
+    numColumns = 2;
   }
-
+   else if (width < 768) {
+    numColumns = 3;
+  }
+  else if (width < 992) {
+    numColumns = 4;
+  } 
+  else if (width < 1200) {
+    numColumns = 6;
+  } 
+  else if (width < 1500) { 
+    numColumns = 7;
+  }
   updateGrid();
 }
 
 
 searchInput.addEventListener('input', function() {
   searchTerm = this.value.trim().toLowerCase();
+  updateColumns();
   updateGrid();
 });
 
