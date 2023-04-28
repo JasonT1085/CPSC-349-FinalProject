@@ -105,6 +105,9 @@ body {
 	text-align: center;
 	height: 200px;
 	width: auto;
+
+	filter:brightness(0.5);
+
   }
 
   .champion-stats {
