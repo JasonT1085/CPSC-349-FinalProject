@@ -33,7 +33,7 @@ function updateColumns() {
   if (width < 436) {
     numColumns = 2;
   }
-   else if (width < 768) {
+   else if (width < 650) {
     numColumns = 3;
   }
   else if (width < 992) {
@@ -42,7 +42,7 @@ function updateColumns() {
   else if (width < 1200) {
     numColumns = 6;
   } 
-  else if (width < 1500) { 
+  else if (width > 1200) { 
     numColumns = 7;
   }
   updateGrid();
@@ -57,3 +57,8 @@ searchInput.addEventListener('input', function() {
 
 updateColumns();
 window.addEventListener('resize', updateColumns);
+window.addEventListener('resize', updateGrid);
+
+window.addEventListener('load', updateColumns);
+window.addEventListener('load', updateGrid);
+
