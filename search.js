@@ -30,7 +30,10 @@ function updateGrid() {
 
 function updateColumns() {
   const width = window.innerWidth;
-  if (width < 436) {
+  if (width < 256) {
+    numColumns = 1;
+  }
+  else if (width < 436) {
     numColumns = 2;
   }
    else if (width < 650) {
@@ -57,7 +60,7 @@ searchInput.addEventListener('input', function() {
 
 updateColumns();
 window.addEventListener('resize', updateColumns);
-window.addEventListener('resize', updateGrid);
+// window.addEventListener('resize', updateGrid);
 
 window.addEventListener('load', updateColumns);
 window.addEventListener('load', updateGrid);
