@@ -101,6 +101,7 @@ fetch('https://ddragon.leagueoflegends.com/cdn/13.8.1/data/en_US/champion.json')
       // create grid items
       const winRateItem = document.createElement('span');
       winRateItem.classList.add('win-rate-item');
+      winRateItem.style.fontFamily = "beaufort_for_lolbold"
       if (championWinRate > 50) {
         winRateItem.classList.add('green-text');
       } else if (championWinRate < 50) {
