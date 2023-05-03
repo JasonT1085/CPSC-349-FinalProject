@@ -15,6 +15,33 @@ body {
 	font-family: 'beaufort_for_lolbold';
 }
 
+.custom-navbar {
+	background-color: rgba(14, 18, 26, 0.5);
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	display: flex;
+    justify-content: space-between; 
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.navbar .nav-item {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
 /* Style the header */
 .header {
 	background-color: #0e121a;
@@ -190,7 +217,7 @@ body {
 /* Intro */
 .intro {
 	position: fixed;
-	z-index: 1;
+	z-index: 1000;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -259,11 +286,26 @@ body {
 	object-fit: cover;
 }
 
+.parallax h1
+{
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 200%);
+	font-size: 3vw;
+	font-family: 'beaufort_for_lolbold';
+	letter-spacing: 2px;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 2px;
+	color: #d1ccb5;
+}
+
 #ashe {
-	height: 100%;
-	object-position: top center;
-	mask-image: linear-gradient(to top, transparent 50%, rgba(0, 0, 0, 0.2));
-	-webkit-mask-image: linear-gradient(to top, transparent 5%, rgba(0, 0, 0, 1));
+    height: 100%;
+    object-position: top center;
+    mask-image: linear-gradient(to top, transparent 1%, rgba(0,0,0,1));
+    -webkit-mask-image: linear-gradient(to top, transparent 1%, rgba(0,0,0,1));
 }
 
 
