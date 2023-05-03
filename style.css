@@ -9,6 +9,7 @@ body {
 	color: rgb(255, 255, 255);
 	padding: 20px;
 	text-align: center;
+	box-shadow: 5px 0 10px black;
 }
 
 /* Style the search bar */
@@ -172,14 +173,58 @@ body {
 
 
 
+/* Intro */
+.intro {
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #161616;
+	transition: 1s;
+}
+
+.logo-header {
+	position: absolute;
+	font-size: 5vw;
+	top: 40%;
+	left: 50%;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	letter-spacing: 2px;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 2px;
+	color: #d1ccb5;
+	transform: translate(-50%,-50%);
+}
+
+.logo {
+	position: relative;
+	display: inline-block;
+	bottom: -70px;
+	opacity: 0;
+}
+
+.logo.active {
+	bottom: 0;
+	opacity: 1;
+	transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+	bottom: 70px;
+	opacity: 0;
+	transition: ease-in-out 0.5s;
+}
 
 
 
-
-
+/* Parallax */
 .parallax {
 	height: 100%;
-	min-height: 500px;
+	min-height: 570px;
 	width: 100%;
 	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 	position: relative;
@@ -200,9 +245,9 @@ body {
 	object-fit: cover;
 }
 
-#asol {
+#ashe {
 	height: 100%;
-	object-position: top right;
+	object-position: top center;
 }
 
 #lol {
