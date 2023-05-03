@@ -20,7 +20,7 @@ fetch('https://ddragon.leagueoflegends.com/cdn/13.8.1/data/en_US/champion.json')
       championTile.classList.add('champion-tile');
       championTile.innerHTML = `
         <img src="${champion.icon}" alt="${champion.name}">
-        <h3>${champion.name}</h3>
+        <h3 style="font-family: 'beaufort_for_lolbold';">${champion.name}</h3>
       `;
       championTile.setAttribute('data-champion-name', champion.name.toLowerCase());
       championTile.setAttribute('data-champion-id', champion.id);
@@ -111,6 +111,7 @@ fetch('https://ddragon.leagueoflegends.com/cdn/13.8.1/data/en_US/champion.json')
 
       const damageDealtItem = document.createElement('span');
       damageDealtItem.classList.add('damage-dealt-item');
+      damageDealtItem.style.fontFamily = "beaufort_for_lolbold"
       damageDealtItem.textContent = `Damage Dealt: ${championDamageDealt}%`;
       if (championDamageDealt > 100) {
         damageDealtItem.classList.add('green-text');
@@ -121,6 +122,7 @@ fetch('https://ddragon.leagueoflegends.com/cdn/13.8.1/data/en_US/champion.json')
 
       const damageTakenItem = document.createElement('span');
       damageTakenItem.classList.add('damage-taken-item');
+      damageTakenItem.style.fontFamily = "beaufort_for_lolbold"
       if (championDamageTaken > 100) {
         damageTakenItem.classList.add('red-text');
       } else if (championDamageTaken < 100) {
