@@ -30,19 +30,19 @@ function updateGrid() {
 
 function updateColumns() {
   const width = window.innerWidth;
-  if (width < 256) {
+  if (width <= 256) {
     numColumns = 1;
   }
-  else if (width < 436) {
+  else if (width <= 436) {
     numColumns = 2;
   }
-   else if (width < 650) {
+   else if (width <= 650) {
     numColumns = 3;
   }
-  else if (width < 992) {
+  else if (width <= 992) {
     numColumns = 4;
   } 
-  else if (width < 1200) {
+  else if (width <= 1200) {
     numColumns = 6;
   } 
   else if (width > 1200) { 
