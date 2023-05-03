@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 span.classList.add('active');
 
-            }, (idx + 1) * 100)
+            }, (idx + 1) * 250)
         });
 
         setTimeout(() => {
@@ -18,13 +18,13 @@ window.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     span.classList.remove('active');
                     span.classList.add('fade');
-                }, (idx + 1) * 50)
+                }, (idx + 1) * 250)
             })
-        }, 1500);
+        }, 2400);
 
         setTimeout(() => {
             intro.style.top = '-100vh';
-        }, 2300);
+        }, 5000);
         
     })
 })
