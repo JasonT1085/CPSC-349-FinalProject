@@ -244,6 +244,7 @@ body {
 	min-height: 25rem;
 	max-width: 30rem;
 	max-height: 35rem;
+	font-family: 'beaufort_for_lolbold';
 }
 
 .card-imd-top {
@@ -252,7 +253,9 @@ body {
 
 .card-title {
 	text-align: center;
-	font-family: 'Times New Roman', Times, serif;
+}
+
+.
 }
 
 /* Intro */
