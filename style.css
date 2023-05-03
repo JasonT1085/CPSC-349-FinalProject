@@ -286,19 +286,26 @@ body {
 	object-fit: cover;
 }
 
-.parallax h1
-{
-	display: block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, 200%);
-	font-size: 3vw;
-	font-family: 'beaufort_for_lolbold';
-	letter-spacing: 2px;
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke-width: 2px;
-	color: #d1ccb5;
+
+.parallax h1 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 150%);
+    font-size: 5vw;
+    font-family: 'beaufort_for_lolbold';
+    letter-spacing: 2px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+	white-space: nowrap;
+    color: #d1ccb5;
+}
+
+@media (max-width: 1000px) {
+	.parallax h1 {
+		font-size: max(5vw, 3rem);
+	}
 }
 
 #ashe {
