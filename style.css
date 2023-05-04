@@ -133,13 +133,11 @@ body {
 		opacity: 0;
 		transform: translateY(0%);
 	}
-
 	to {
 		opacity: 1;
 		transform: translateY(-10px);
 	}
 }
-
 
 .champion-stats-container img {
 	display: flex;
@@ -148,9 +146,7 @@ body {
 	text-align: center;
 	height: 200px;
 	width: auto;
-
 	filter: brightness(0.5);
-
 }
 
 .champion-stats {
@@ -341,12 +337,6 @@ body {
     -webkit-text-stroke-width: 2px;
 	white-space: nowrap;
     color: #d1ccb5;
-}
-
-@media (max-width: 1000px) {
-	.parallax h1 {
-		font-size: max(5vw, 3rem);
-	}
 }
 
 #ashe {
