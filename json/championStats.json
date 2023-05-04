@@ -598,7 +598,7 @@
             "id": "Malzahar",
             "stats": {
                 "dmgDealt": "0.92",
-                "dmgTaken": "0.92",
+                "dmgTaken": "1.08",
                 "winRate": "54.67"
             }
         },
