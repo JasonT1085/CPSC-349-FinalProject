@@ -337,6 +337,12 @@ body {
     color: #d1ccb5;
 }
 
+@media (min-width: 1920px) {
+	.parallax h1 {
+		font-size: calc(min(5vw, 7rem));
+	}
+}
+
 #ashe {
 	height: 100%;
 	object-position: top center;

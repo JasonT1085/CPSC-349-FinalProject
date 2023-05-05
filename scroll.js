@@ -3,10 +3,10 @@ let introtext = document.getElementById('intro-text');
 
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
+    let scalingFactor = window.innerWidth / 1920;
 
-    lol.style.marginTop = value * 0.5 + 'px'
-    introtext.style.marginTop = value * 0.4 + 'px'
-
+    lol.style.marginTop = value * 0.5 * scalingFactor + 'px';
+    introtext.style.marginTop = value * 0.4 * scalingFactor + 'px';
 });
 
 $(window).scroll(function () {
