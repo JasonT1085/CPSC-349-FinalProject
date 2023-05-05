@@ -53,7 +53,7 @@ body {
 
 /* Style the search bar */
 #search-bar {
-	width: 50%;
+	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
 	box-sizing: border-box;
@@ -62,15 +62,13 @@ body {
 	background-color: #f8f8f8;
 	font-family: 'beaufort_for_lolbold';
 	font-size: 16px;
-}
-
-/* Style the container */
-.container {
-	padding: 1rem;
-	display: flex;
-	justify-content: center;
-	min-width: 700px;
-}
+  }
+  
+  @media (min-width: 768px) {
+	#search-bar {
+	  width: 50%;
+	}
+  }
 
 /* Style the champion grid */
 .champion-grid {
