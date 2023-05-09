@@ -13,6 +13,7 @@
 
 
 <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup="{}">
-  <source src="VIDEO_LINK_HERE" type='video/x-matroska'>
+  <source src="demopresentation.mkv" type='video/x-matroska'>
 </video>
+
 <script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
