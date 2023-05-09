@@ -12,6 +12,4 @@
  CWID: 888735404
 
 
-<video width="640" height="480" controls>
-  <source src="demopresentation.mp4" type="video/mp4">
-</video>
+[![Your Video Title](http://img.youtube.com/vi/uC_WDcPM_hE/0.jpg)](https://www.youtube.com/watch?v=uC_WDcPM_hE "Final Project Demo")
