@@ -12,8 +12,6 @@
  CWID: 888735404
 
 
-<video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup="{}">
-  <source src="demopresentation.mkv" type='video/x-matroska'>
+<video width="640" height="480" controls>
+  <source src="demopresentation.mp4" type="video/mp4">
 </video>
-
-<script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
